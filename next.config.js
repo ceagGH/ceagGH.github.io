@@ -13,7 +13,8 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['img.icons8.com']
+    domains: ['img.icons8.com'],
+    unoptimized: !!process.env.NEXT_PUBLIC_BASE_PATH //Don't Optimize Images if we're on static hosting
   },
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
