@@ -15,6 +15,8 @@ module.exports = {
   images: {
     domains: ['img.icons8.com']
   },
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   ...withMDX({
     // Append the default value with md extensions
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
