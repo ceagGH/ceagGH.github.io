@@ -19,7 +19,7 @@ module.exports = {
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   experimental: {
     images: {
-      unoptimized: !!process.env.NEXT_PUBLIC_BASE_PATH //Don't Optimize Images if we're on static hosting
+      unoptimized: true //Don't Optimize Images if we're on static hosting
     },
   },
   ...withMDX({
