@@ -53,7 +53,7 @@ const Members: NextPage = () => {
                     />
                     <MemberItem
                         name="Cheah Yeok Tatt"
-                        course="Unknown"
+                        course="Electronic and Information Engineering, specialization in AI/ML "
                         image="CheahYeokTatt.png"
                         linkedIn="https://www.linkedin.com/in/yeok-tatt-cheah/"
                     />
