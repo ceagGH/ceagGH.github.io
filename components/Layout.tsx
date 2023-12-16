@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC, PropsWithChildren, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import CEAGLogo from '../public/assets/logo/CEAG Logo v1_edited.jpg';
+import CEAGLogo from '../public/assets/logo/CEAG-gradient.png';
 import Facebook from "./Icons/Facebook";
 import Instagram from "./Icons/Instagram";
 
@@ -16,7 +16,8 @@ const NavItem: FC<{ href: string; label: string }> = ({
     const router = useRouter();
     const isActive = router.pathname === href;
     return (
-        <Link href={href}><a className={`text-xl ${isActive?'text-[#011e76] font-bold': 'text-gray-400 font-semibold'} transition-colors`}>{label}</a></Link>
+        <Link href={href}>
+            <a className={`text-xl ${isActive?'text-[#011e76] font-bold': 'text-gray-400 font-semibold'} transition-colors`}>{label}</a></Link>
     );
 }
 
@@ -42,15 +43,16 @@ const Layout: FC<PropsWithChildren<{title?: string}>> = ({ title = "CEC Alumni-A
             </div>
         </div>}
         <Grow appear={isMobile} in={showMenu} style={{ transformOrigin: '0 0 0' }}>
-            <div className="fixed md:static top-16 left-0 h-[calc(100vh-64px)] md:h-screen w-screen md:w-auto flex flex-col px-4 py-6 z-50 bg-white">
-                <div className="w-40 hidden md:block cursor-pointer">
+            <div className="fixed md:static top-16 left-0 h-[calc(100vh-64px)] md:h-screen w-screen md:w-auto flex flex-col px-4 py-6 z-50 bg-white" style={{background: '#d0efff5c'}}>
+                 <div className="w-40 hidden md:block cursor-pointer" >
                     <Image onClick={() => router.push('/')} src={CEAGLogo} layout="responsive" alt="CEAG Logo" /> 
                 </div>
-                <nav className="flex-1 md:flex-0 mt-8 ml-5 flex flex-col space-y-3">
+                <nav className="flex-1 md:flex-0 mt-8 ml-5 flex flex-col space-y-3 ">
                     <NavItem href='/' label='Home' />
-                    <NavItem href='/aboutus' label='About Us' />
+                    <NavItem href='/aboutUS' label='About Us' />
                     <NavItem href='/members' label='Members' />
                     <NavItem href='/activities' label='Activities' />
+                    <NavItem href='/admin' label='Admin Page' />
                 </nav>
                 <footer className="space-y-2 mt-8">
                     <a target="_blank" rel="noreferrer" href="https://www.instagram.com/cec_clphs/" className="text-sm text-gray-600 flex flex-row space-x-2 items-center">

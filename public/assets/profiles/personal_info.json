@@ -1,0 +1,7 @@
+[{"ID":"1","NAME":"Boon Jun","EMAIL":"boonjun@gmail.com","YEAR":"2016","COURSE": "ENGINEERING"},
+{"ID":"2","NAME":"Ooi Teng Hao","EMAIL":"ooitenghao@gmail.com","YEAR":"2016","COURSE": "ENGINEERING"},
+{"ID":"3","NAME":"Poh Mun Hong","EMAIL":"pohmunhong@gmail.com","YEAR":"2017","COURSE": "ENGINEERING"},
+{"ID":"4","NAME":"Koey Ji Qian","EMAIL":"koeyjiqian@gmail.com","YEAR":"2017","COURSE": "ENGINEERING"},
+{"ID":"5","NAME":"Cheah Yeok Tatt","EMAIL":"cheahyeoktatt@gmail.com","YEAR":"2017","COURSE": "ENGINEERING"},
+{"ID":"6","NAME":"Lean Xin Ying","EMAIL":"leanxinying@gmail.com","YEAR":"2018","COURSE": "ENGINEERING"},
+{"ID":"test","NAME":"test","EMAIL":"test","YEAR":"1234","COURSE": "ENGINEERING"}]
